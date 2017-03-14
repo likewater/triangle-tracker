@@ -9,9 +9,19 @@ public class Triangle {
     mSideThree = sideThree;
   }
 
-  public boolean verifyTriangle(int one, two, three) {
-    if (one + two > three || one + three > two || two + three > one) {
+  public boolean verifyTriangle(sideOne, sideTwo, sideThree) {
+    if (sideOne + sideTwo < sideThree || sideOne + sideThree < sideTwo || sideTwo + sideThree < sideOne) {
       return false;
-    }    
+    }
+  }
+
+  public String typeOfTriangle(sideOne, sideTwo, sideThree) {
+    if (sideOne == sideTwo && sideTwo == sideThree) {
+      type = "Equalateral";
+    } else if (sideOne != sideTwo && sideTwo != sideThree && sideThree != sideOne) {
+      type = "Scalene";
+    } else {
+      type = "Isosceles";
+    }
   }
 }
