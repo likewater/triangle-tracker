@@ -9,13 +9,14 @@ public class Triangle {
     mSideThree = sideThree;
   }
 
-  public boolean verifyTriangle(sideOne, sideTwo, sideThree) {
+  public Boolean verifyTriangle(int sideOne, int sideTwo, int sideThree) {
     if (sideOne + sideTwo < sideThree || sideOne + sideThree < sideTwo || sideTwo + sideThree < sideOne) {
-      return false;
     }
+    return false;
   }
 
-  public String typeOfTriangle(sideOne, sideTwo, sideThree) {
+  public String typeOfTriangle(int sideOne, int sideTwo, int sideThree) {
+    String type = "";
     if (sideOne == sideTwo && sideTwo == sideThree) {
       type = "Equalateral";
     } else if (sideOne != sideTwo && sideTwo != sideThree && sideThree != sideOne) {
@@ -23,5 +24,6 @@ public class Triangle {
     } else {
       type = "Isosceles";
     }
+    return type;
   }
 }

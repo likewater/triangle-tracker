@@ -10,7 +10,12 @@ public class App {
     int two = Integer.parseInt(myConsole.readLine());
     System.out.println("Enter side three length.");
     int three = Integer.parseInt(myConsole.readLine());
+
     Triangle firstTriangle = new Triangle(one, two, three);
+
+    // if (Triangle.verifyTriangle.equals(false)) {
+    //   System.out.println("That is not a triangle, try again!");
+    // }
 
 
 
